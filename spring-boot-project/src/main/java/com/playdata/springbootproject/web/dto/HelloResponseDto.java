@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor // final 혹은 nonnull로 선언된 필드를 인자를 가지는 생성자.
 public class HelloResponseDto{
 
-    private final String name0;
+    private final String name  ;
     private final int amount;
 
 }

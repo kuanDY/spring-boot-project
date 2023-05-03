@@ -1,10 +1,9 @@
 package com.playdata.springbootproject.web;
 
-import com.playdata.springbootproject.domain.Posts;
-import com.playdata.springbootproject.domain.PostsRepository;
+import com.playdata.springbootproject.domain.posts.Posts;
+import com.playdata.springbootproject.domain.posts.PostsRepository;
 import com.playdata.springbootproject.web.dto.PostsSaveRequestDto;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -17,7 +16,6 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.web.bind.annotation.RequestBody;
 
 
 import java.util.List;

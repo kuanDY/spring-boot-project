@@ -1,5 +1,7 @@
-package com.playdata.springbootproject.domain;
+package com.playdata.springbootproject.domain.posts;
 
+
+import com.playdata.springbootproject.domain.AuditingEntity;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -8,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor // 기본 생성자
 @Entity// 기본 생성자가 기본으로 있어야한다.
-public class Posts {
+public class Posts extends AuditingEntity {
     @Id     //PK
     @GeneratedValue(strategy = GenerationType.IDENTITY) // AUTO_INCREMENT
     private Long id;    //big int
